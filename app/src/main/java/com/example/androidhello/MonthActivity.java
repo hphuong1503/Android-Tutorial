@@ -27,7 +27,7 @@ public class MonthActivity extends AppCompatActivity {
 
                 a = Integer.parseInt(textA);
 
-                solveMonthSwitchCase((int) a);
+                solveMonth((int) a);
             }
 
 
