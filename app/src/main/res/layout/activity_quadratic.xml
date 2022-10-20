@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEF1"
+    tools:context=".Quadratic">
+
+    <TextView
+        android:id="@+id/tvQuadraticFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#FFFAFA"
+        android:fontFamily="monospace"
+        android:text="Quadratic Formula"
+        android:textColor="#ED0606"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNx2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#DACDCD"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Input nx^2"
+        android:inputType="numberSigned|number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuadraticFormula" />
+
+    <EditText
+        android:id="@+id/etNx"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="#F4F1F1"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Input nx"
+        android:inputType="numberSigned|number"
+        app:layout_constraintStart_toEndOf="@+id/etNx2"
+        app:layout_constraintTop_toTopOf="@+id/etNx2" />
+
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="#9E9C9C"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Input C"
+        android:inputType="numberSigned|number"
+        app:layout_constraintStart_toEndOf="@+id/etNx"
+        app:layout_constraintTop_toTopOf="@+id/etNx" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="="
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etC" />
+
+    <TextView
+        android:id="@+id/tvResult1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="x1 ="
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate" />
+
+    <TextView
+        android:id="@+id/tvResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="x2 = "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult1" />
+
+    <TextView
+        android:id="@+id/tvRoot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvResult1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate" />
+
+    <TextView
+        android:id="@+id/tvRoot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvResult2"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
