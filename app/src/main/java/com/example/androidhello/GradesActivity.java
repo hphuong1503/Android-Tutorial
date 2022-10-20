@@ -47,7 +47,7 @@ public class GradesActivity extends AppCompatActivity {
             }else if (a == 4) {
                 binding.tvGrades.setText("A");
             }else{
-                binding.tvGrades.setText("error");
+                binding.tvGrades.setText(":)");
             }
         }else {
             binding.tvGrades.setText("error");
