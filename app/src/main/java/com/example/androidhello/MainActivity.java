@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         int n= 9 ;
 
+       // dasd
 //        checkPrimeNumber(n);
         System.out.println( n+" is prime? : "+checkPrimeNumber(n));
     }
