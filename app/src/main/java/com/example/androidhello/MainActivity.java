@@ -23,6 +23,27 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        int n= 9 ;
+
+//        checkPrimeNumber(n);
+        System.out.println( n+" is prime? : "+checkPrimeNumber(n));
+    }
+
+    boolean checkPrimeNumber(int n ){
+        for (int i =2; i < n; i++)
+        {
+            if( n % i ==0)
+            {
+                return false;
+            }
+        }
+
+
+        return true;
 
     }
+
+
+
+
 }
