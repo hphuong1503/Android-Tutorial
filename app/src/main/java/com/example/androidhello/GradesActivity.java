@@ -37,20 +37,20 @@ public class GradesActivity extends AppCompatActivity {
     void SolveGrade (float a) {
         if (a>=0) {
             if (a < 1) {
-                binding.tvGrades.setText("F");
+                binding.tvText.setText("F");
             } else if (a < 2) {
-                binding.tvGrades.setText("D");
+                binding.tvText.setText("D");
             } else if (a < 3) {
-                binding.tvGrades.setText("C");
+                binding.tvText.setText("C");
             }else if (a < 4) {
-                binding.tvGrades.setText("B");
+                binding.tvText.setText("B");
             }else if (a == 4) {
-                binding.tvGrades.setText("A");
+                binding.tvText.setText("A");
             }else{
-                binding.tvGrades.setText(":)");
+                binding.tvText.setText(":)");
             }
         }else {
-            binding.tvGrades.setText("error");
+            binding.tvText.setText("error");
         }
     }
 
